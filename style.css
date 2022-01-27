@@ -1,0 +1,89 @@
+:root {
+  --c-p-dark-cyan: hsl(185, 75%, 39%);
+  --c-p-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --c-p-dark-grayish-blue: hsl(227, 10%, 46%);
+  --c-neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.125rem;
+  background: hsl(185, 75%, 39%);
+}
+
+p {
+  font-weight: bolder;
+}
+
+.card {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Card Top */
+
+.profile-picture {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: solid white 4px;
+}
+
+.age {
+  font-weight: lighter;
+  margin-left: 0.125rem;
+}
+
+/* Card Bottom */
+
+.card-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 26px 20px 26px 26px;
+}
+
+.card-bottom-grid p {
+  color: var(--c-p-very-dark-desaturated-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.card-bottom-grid span {
+  color: var(--c-neutral-dark-gray);
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Height of the footer */
+}
