@@ -62,6 +62,10 @@ p {
   margin-left: 0.125rem;
 }
 
+.country {
+  padding-top: 1rem;
+}
+
 /* Card Bottom */
 
 .card-bottom-grid {
